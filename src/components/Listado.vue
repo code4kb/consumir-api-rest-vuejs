@@ -1,32 +1,32 @@
 <template>
 
-<section v-if="huboerror">
-    <div class="alert alert-danger" role="alert">    
-        <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde.</p>
-    </div>        
-</section>
+    <section v-if="huboerror">
+        <div class="alert alert-danger" role="alert">    
+            <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde.</p>
+        </div>        
+    </section>
 
-<section v-else>
-    <div v-if="cargando">Cargando...</div>
+    <section v-else>
+        <div v-if="cargando">Cargando...</div>
 
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Usuario</th>
-                    <th scope="col">Título</th>
-                    <th scope="col">Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="todo in todos" :key="todo.id">
-                    <th scope="row">{{todo.id}}</th>
-                    <td>{{todo.userId}}</td>
-                    <td>{{todo.title}}</td>
-                    <td>{{todo.completed}}</td>
-                </tr>
-            </tbody>
-        </table>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="todo in todos" :key="todo.id">
+                        <th scope="row">{{todo.id}}</th>
+                        <td>{{todo.userId}}</td>
+                        <td>{{todo.title}}</td>
+                        <td>{{todo.completed}}</td>
+                    </tr>
+                </tbody>
+            </table>
     </section>    
 </template>
 
