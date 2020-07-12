@@ -1,7 +1,9 @@
 <template>
 
 <section v-if="huboerror">
-    <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde.</p>
+    <div class="alert alert-danger" role="alert">    
+        <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde.</p>
+    </div>        
 </section>
 
 <section v-else>
@@ -17,12 +19,12 @@
                 </tr>
             </thead>
             <tbody>
-            <tr v-for="todo in todos" :key="todo.id">
-                <th scope="row">{{todo.id}}</th>
-                <td>{{todo.userId}}</td>
-                <td>{{todo.title}}</td>
-                <td>{{todo.completed}}</td>
-            </tr>
+                <tr v-for="todo in todos" :key="todo.id">
+                    <th scope="row">{{todo.id}}</th>
+                    <td>{{todo.userId}}</td>
+                    <td>{{todo.title}}</td>
+                    <td>{{todo.completed}}</td>
+                </tr>
             </tbody>
         </table>
     </section>    
