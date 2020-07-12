@@ -1,24 +1,21 @@
-# consumir-api-rest-vuejs
+# Consumir Api Rest con Vue.js
 
-## Project setup
+Ejemplo sobre como consumir y mostrar datos desde un API REST a través de Vue.js y Axios.js.
+
+![GitHub repo](https://raw.githubusercontent.com/code4kb/consumir-api-rest-vuejs/master/src/assets/repo_github_vuejs.png "Repo")
+
+
+## Configuración del proyecto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compila y recarga (en caliente) para el desarrollo
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compila y minifica para producción
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
