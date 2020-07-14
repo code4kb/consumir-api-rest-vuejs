@@ -7,7 +7,13 @@
     </section>
 
     <section v-else>
-        <div v-if="cargando">Cargando...</div>
+        <div v-if="cargando">
+            
+            <b-button variant="primary" disabled>
+                <b-spinner small type="grow"></b-spinner>
+                Cargando ...
+            </b-button>           
+            </div>
 
         <table class="table table-striped">
             <thead>
@@ -48,8 +54,9 @@ export default {
     },
     methods: {
         getAll(){
+            this.cargando = true //the loading begin
             axios
-                .get(this.urlApi)
+                .get(this.urlApi)   
                 .then(response => {
                     this.todos = response.data
                 })
