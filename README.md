@@ -21,7 +21,7 @@ Antes de comenzar a clonar el proyecto, debo cometarle que el mismo ya está con
 Necesitas tener instalado Node.Js y su gestor de paquetes NPM
 
 ```
-Download Node.js Installer - (https://nodejs.org/en/download/)
+[Download Node.js Installer](https://nodejs.org/en/download/)
 ```
 
 ### Instalación 🔧
@@ -51,7 +51,7 @@ npm run serve
 Paso 4: Luego de ejecutar el comando anterior, la aplicación se ejecutará y estará disponible en:
 
 ```
-(http://localhost:8080)
+[http://localhost:8080](http://localhost:8080)
 ```
 
 Paso 5: Como resultado, deberías ver algo similar a esto:
