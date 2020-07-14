@@ -51,7 +51,7 @@ npm run serve
 Paso 4: Luego de ejecutar el comando anterior, la aplicación se ejecutará y estará disponible en:
 
 ```
-[http://localhost:8080](http://localhost:8080)
+[localhost:8080](http://localhost:8080) - Servidor local de pruebas
 ```
 
 Paso 5: Como resultado, deberías ver algo similar a esto:
