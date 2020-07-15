@@ -18,10 +18,10 @@ Antes de comenzar a clonar el proyecto, debo cometarle que el mismo ya está con
 
 ### Pre-requisitos 📋
 
-Necesitas tener instalado Node.Js y su gestor de paquetes NPM
+Necesitas tener instalado [Node.Js](https://nodejs.org/en/download/) y su gestor de paquetes NPM
 
 ```
-Node.js :  https://nodejs.org/en/download/
+* Node.js
 ```
 
 ### Instalación 🔧
@@ -48,10 +48,10 @@ Paso 3: Después de instalar correctamente los paquetes, ejecuta este comando:
 npm run serve
 ```
 
-Paso 4: Luego de ejecutar el comando anterior, la aplicación se ejecutará y estará disponible en:
+Paso 4: Luego de ejecutar el comando anterior, la aplicación se ejecutará y estará disponible en el servidor local de pruebas:
 
 ```
-[](http://localhost:8080) - Servidor local de pruebas
+http://localhost:8080
 ```
 
 Paso 5: Como resultado, deberías ver algo similar a esto:
