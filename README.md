@@ -18,11 +18,7 @@ Antes de comenzar a clonar el proyecto, debo cometarle que el mismo ya está con
 
 ### Pre-requisitos 📋
 
-Necesitas tener instalado [Node.Js](https://nodejs.org/en/download/) y su gestor de paquetes NPM
-
-```
-* Node.js
-```
+Necesitas tener instalado [Node.Js](https://nodejs.org/en/download/) y su gestor de paquetes NPM.
 
 ### Instalación 🔧
 
@@ -50,14 +46,14 @@ npm run serve
 
 Paso 4: Luego de ejecutar el comando anterior, la aplicación se ejecutará y estará disponible en el servidor local de pruebas:
 
-```
-http://localhost:8080
-```
+[Servidor local](http://localhost:8080)
+
 
 Paso 5: Como resultado, deberías ver algo similar a esto:
 
 
-![GitHub repo](https://raw.githubusercontent.com/code4kb/consumir-api-rest-vuejs/master/src/assets/repo_github_vuejs.png "Repo")
+
+![GitHub repo](https://raw.githubusercontent.com/code4kb/consumir-api-rest-vuejs/master/src/assets/repo_github_vuejs.gif "Repo")
 
 
 ## Construido con 🛠️

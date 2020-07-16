@@ -1,5 +1,4 @@
 <template>
-
     <section v-if="huboerror">
         <div class="alert alert-danger" role="alert">    
             <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde.</p>
@@ -11,7 +10,7 @@
             Loading...
         </div>
 
-        <table class="table table-striped">
+        <table class="table table-hover striped">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -31,8 +30,9 @@
                     <td>{{todo.completed}}</td>
                 </tr>
             </tbody>
-        </table>
-    </section>    
+        </table>           
+
+    </section>
 </template>
 
 <script>
