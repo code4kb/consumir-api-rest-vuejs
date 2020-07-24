@@ -1,59 +1,68 @@
-# Consumir Api Rest con Vue.js
+# Consumir api rest con Vue.js
 
 Ejemplo sobre como consumir y mostrar datos desde un API REST a través de Vue.js, utilizando Axios.js. 
-
-Desde Vue.js creamos un componente llamado `<Listado>`, el cual será el encargado de hacer la petición al API Rest y mostrar los resultados en el Frontend.
-
-El mismo se encuentra ubicado en la siguiente ruta del proyecto:
-
-`consumir-api-rest-vuejs/src/components/Listado.vue`
 
 
 ## Comenzando 🚀
 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-Antes de comenzar a clonar el proyecto, debo cometarle que el mismo ya está configurado por WebPack, por lo que no debe preocuparse.
+Antes de comenzar a clonar el proyecto, debo cometarte que el mismo ya está configurado por WebPack, por lo que no debe preocuparte.
 
 
 ### Pre-requisitos 📋
 
-Necesitas tener instalado [Node.Js](https://nodejs.org/en/download/) y su gestor de paquetes NPM.
+En primer lugar, asegúrate de tener todos los requisitos previos instalados:
+
+- [Download Node.js and npm](https://nodejs.org/en/download/) (npm se distribuye con Node.js, lo que significa que cuando descargas Node.js, automáticamente se instala npm en tu computadora.)
+- [Git](https://git-scm.com/).
+
+Después de verificar los requisitos previos, podemos avanzar con la instalación.
 
 ### Instalación 🔧
 
-Paso 1: Clonamos el proyecto.
+**Paso 1:** Clonamos el proyecto
 
-Escribe este comando en tu terminal
+Posicionados en el directorio, en donde queremos clonar el proyecto, escribe este comando en tu terminal
 
 ```
+# Clonamos el repositorio
 git clone https://github.com/code4kb/consumir-api-rest-vuejs.git
-```
-
-Paso 2:  Instalación de paquetes.
-
-Después de la clonación, instale todos los paquetes para ejecutar este proyecto. Escribe este comando en tu terminal
 
 ```
+
+**Paso 2:**  Instalación de paquetes
+
+Después de la clonación, accedemos al directorio que acabamos de crear e instalamos todas las dependencias del proyecto. Escribe este comando en tu terminal
+
+```
+cd consumir-api-rest-vuejs
+
 npm install
 ```
 
-Paso 3: Después de instalar correctamente los paquetes, ejecuta este comando:
+**Paso 3:** Después de instalar correctamente los paquetes, ejecuta este comando:
 
 ```
 npm run serve
+
 ```
 
-Paso 4: Luego de ejecutar el comando anterior, la aplicación se ejecutará y estará disponible en el servidor local de pruebas:
+**Paso 4:** Luego de ejecutar el comando anterior, la aplicación se ejecutará y estará disponible en el servidor local de pruebas:
 
-[Servidor local](http://localhost:8080)
+[Servidor localhost:8080](http://localhost:8080)
 
 
-Paso 5: Como resultado, deberías ver algo similar a esto:
+**Paso 5:** Como resultado, deberías ver algo similar a esto:
 
 
 
 ![GitHub repo](https://raw.githubusercontent.com/code4kb/consumir-api-rest-vuejs/master/src/assets/repo_github_vuejs.gif "Repo")
+
+
+## Cómo colaborar en este repositorio de GitHub 🖇️
+
+Todas las ideas, sugerencias, arreglos, mejoras y comentarios propuestos son bien recibidos. No obstante, por favor lee el [CONTRIBUTING.md](https://github.com/code4kb/consumir-api-rest-vuejs/blob/master/CONTRIBUTING.md) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests y colaborar.
 
 
 ## Construido con 🛠️
