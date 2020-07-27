@@ -1,23 +1,16 @@
 <template>
   <div id="app">
-    <div class="container">
+    <div class="container small">
       <div class="row">
-        <div class="col-xl-4">
-          <div class="card bg-light">
-            <h3 class="card-header font-weight-bold"><img alt="Vue logo" src="./assets/logo.png" class="imagen"> Vue.js + Axios.js</h3>
-            <div class="card-body">
-              <h5 class="card-title text-left">Ejemplo sobre como consumir y mostrar datos desde un API REST a través de Vue.js, utilizando Axios.js.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-8">
+        <div class="col-12">
+          <div class="box">
+            <h5><img src="https://vuejs.org/images/logo.png" alt="vue logo" class="imagen" >Consumir API REST</h5>
+            <p>Ejemplo sobre como consumir y mostrar datos desde un API REST a través de Vue.js, utilizando Axios.js.</p>			
+          </div><br>
           <div class="card">
-              <div class="card-header">
-                <h3 class="font-weight-bold"><img alt="Vue logo" src="./assets/logo.png" class="imagen"> Consumir servicio API REST - Vue.js</h3>
-              </div>
-              <div class="card-body">
-                <Listado />
-              </div> 
+            <div class="card-body">
+              <Listado />
+            </div>
           </div>
         </div>
       </div>  
@@ -36,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -45,10 +38,27 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+body {
+  padding: 15px;
+}
+.box {
+	background-color: #f8f8f8;
+	border-left: 4px solid #41B883;
+	padding: 12px;
+	margin-bottom: 15px;
+}
+.space {
+	padding: 30px;
+}
 .imagen {
-  max-width:32px;
-  max-height:32px;
-  width:auto;
-  height:auto;
+    vertical-align: middle;
+    margin-right: 5px;
+	max-width:32px;
+	max-height:32px;
+	width:auto;
+	height:auto;	
+}
+.small {
+  max-width: 720px;
 }
 </style>
