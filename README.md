@@ -57,7 +57,7 @@ npm run serve
 
 
 
-![GitHub repo](https://raw.githubusercontent.com/code4kb/consumir-api-rest-vuejs/master/src/assets/repo_github_vuejs.gif "Repo")
+![GitHub repo](https://raw.githubusercontent.com/code4kb/consumir-api-rest-vuejs/master/src/assets/repo_github_vue.gif "Repo")
 
 
 ## Cómo colaborar en este repositorio de GitHub 🖇️
