@@ -10,24 +10,26 @@
             Loading...
         </div>
 
-        <table class="table table-hover striped">
-            <thead>
+        <table class="table table-hover striped text-left">
+            <thead class="thead-light">
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Usuario</th>
-                    <th scope="col">Título</th>
-                    <th scope="col">Estado</th>
+                    <th scope="col">👤 Nombre</th>
+                    <th scope="col">@ Usuario</th>
+                    <th scope="col">✉️ E-mail</th>
+                    <th scope="col">🏙️ Ciudad</th>
                 </tr>
             </thead>
             <tbody>
                 <tr 
-                    v-for="todo in todos"
-                    :key="todo.id"
+                    v-for="user in users"
+                    :key="user.id"
                 >
-                    <th scope="row">{{todo.id}}</th>
-                    <td>{{todo.userId}}</td>
-                    <td>{{todo.title}}</td>
-                    <td>{{todo.completed}}</td>
+                    <th scope="row">{{user.id}}</th>
+                    <td>{{user.name}}</td>
+                    <td>@{{user.username}}</td>
+                    <td><a v-bind:href="'mailto:' + user.email">{{user.email}}</a></td>
+                    <td>{{user.address.city}}</td>
                 </tr>
             </tbody>
         </table>           
@@ -42,10 +44,10 @@ export default {
     name: 'listado',
     data() {
         return {
-            todos:null,
+            users:null,
             cargando: true,
             huboerror: false,
-            urlApi: 'https://jsonplaceholder.typicode.com/todos'
+            urlApi: 'https://jsonplaceholder.typicode.com/users'
         }
     },
     mounted(){
@@ -57,7 +59,7 @@ export default {
             axios
                 .get(this.urlApi)   
                 .then(response => {
-                    this.todos = response.data
+                    this.users = response.data
                 })
                 .catch(error => {
                     console.log(error)
