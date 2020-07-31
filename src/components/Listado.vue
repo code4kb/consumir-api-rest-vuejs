@@ -39,6 +39,7 @@
 
 <script>
 import axios from 'axios'
+import settings from '../settings.json'
 
 export default {
     name: 'listado',
@@ -47,7 +48,7 @@ export default {
             users:null,
             cargando: true,
             huboerror: false,
-            urlApi: 'https://jsonplaceholder.typicode.com/users'
+            urlApi: `${settings.environments.dev.api.uri}/users`
         }
     },
     mounted(){
