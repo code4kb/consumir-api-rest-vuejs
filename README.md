@@ -21,7 +21,7 @@ After verifying the prerequisites, we can proceed with the installation.
 
 ### Installation 🔧
 
-**Paso 1:** clone the project
+**Step 1:** clone the project
 
 Positioned in the directory, where we want to clone the project, write this command in your terminal
 
@@ -31,7 +31,7 @@ git clone https://github.com/code4kb/consumir-api-rest-vuejs.git
 
 ```
 
-**Paso 2:**  Package installation
+**Step 2:**  Package installation
 
 After cloning, we access the directory we just created and install all the dependencies of the project. Write this command in your terminal
 
@@ -41,19 +41,19 @@ cd consumir-api-rest-vuejs
 npm install
 ```
 
-**Paso 3:** After successfully installing the packages, run this command:
+**Step 3:** After successfully installing the packages, run this command:
 
 ```
 npm run serve
 
 ```
 
-**Paso 4:** After executing the above command, the application will run and be available on the local test server:
+**Step 4:** After executing the above command, the application will run and be available on the local test server:
 
 [Server localhost:8080](http://localhost:8080)
 
 
-**Paso 5:** As a result, you should see something similar to this:
+**Step 5:** As a result, you should see something similar to this:
 
 
 
