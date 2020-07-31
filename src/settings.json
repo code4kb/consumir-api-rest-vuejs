@@ -1,0 +1,10 @@
+{
+    "environments":{
+        "uri":{
+            "api":{
+                "prod":"https://jsonplaceholder.typicode.com",
+                "dev":"http://localhost:5001/api"
+            }
+        }
+    }
+}
