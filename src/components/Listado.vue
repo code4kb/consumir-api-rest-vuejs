@@ -48,7 +48,7 @@ export default {
             users:null,
             cargando: true,
             huboerror: false,
-            urlApi: `${settings.environments.uri.api.dev}/users`
+            urlApi: `${settings.environments.dev.api.uri}/users`
         }
     },
     mounted(){

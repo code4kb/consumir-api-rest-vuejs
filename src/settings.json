@@ -1,9 +1,13 @@
 {
     "environments":{
-        "uri":{
+        "prod":{
             "api":{
-                "prod":"https://jsonplaceholder.typicode.com",
-                "dev":"http://localhost:5001/api"
+                "uri":"https://jsonplaceholder.typicode.com"
+            }
+        },
+        "dev":{
+            "api":{
+                "uri":"http://localhost:5001/api"
             }
         }
     }
