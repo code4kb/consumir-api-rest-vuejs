@@ -1,20 +1,67 @@
 <template>
   <div id="app">
-    <div class="container small">
-      <div class="row">
-        <div class="col-12">
-          <div class="box">
-            <h5><img src="https://vuejs.org/images/logo.png" alt="vue logo" class="imagen" >Consumir API REST</h5>
-            <p>Ejemplo sobre como consumir y mostrar datos desde un API REST a través de Vue.js, utilizando Axios.js.</p>			
-          </div><br>
-          <div class="card">
-            <div class="card-body">
-              <Listado />
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">Add some information about of site. Then, link them off to some social networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>🛠️ Vue.js + Axios</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+  </header>    
+  <main role="main">
+    <section class="text-left">
+      <div class="container">
+        <div class="row contacts">
+          <div class="col-md-12">
+            <h1>💼 Contacts</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-left">
+              <h5>Actions</h5>
+            </div>
+            <div class="card-body text-left">
+              <p class="card-text">
+                <a href="#" class="btn btn-light text-info">➕ New Contact</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <!-- Component Vue List -->
+              <Listado />
+        </div>
+      </div>
     </div>
+  </main>
   </div>
 </template>
 
@@ -31,34 +78,27 @@ export default {
 
 <style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 body {
-  padding: 15px;
+  padding: 0px;
 }
-.box {
-	background-color: #f8f8f8;
-	border-left: 4px solid #41B883;
-	padding: 12px;
-	margin-bottom: 15px;
+.contacts {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
-.space {
-	padding: 30px;
+.contacts h1 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid #F5F5F5;
 }
-.imagen {
-    vertical-align: middle;
-    margin-right: 5px;
-	max-width:32px;
-	max-height:32px;
-	width:auto;
-	height:auto;	
-}
-.small {
-  max-width: 720px;
+.links{
+	padding:0px;
+	margin:0px;
 }
 </style>

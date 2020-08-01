@@ -10,14 +10,15 @@
             Loading...
         </div>
 
-        <table class="table table-hover striped text-left">
-            <thead class="thead-light">
+        <table class="table striped text-left mi-table">
+            <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">👤 Nombre</th>
-                    <th scope="col">@ Usuario</th>
-                    <th scope="col">✉️ E-mail</th>
-                    <th scope="col">🏙️ Ciudad</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,9 +31,13 @@
                     <td>@{{user.username}}</td>
                     <td><a v-bind:href="'mailto:' + user.email">{{user.email}}</a></td>
                     <td>{{user.address.city}}</td>
+                    <td>					
+                        <a href="#" class="btn btn-light text-info" title="View profile">🔍</a>
+                    </td>                    
                 </tr>
             </tbody>
-        </table>           
+        </table>
+        <h5 class="text-left total">Total contacts found: {{users.length}} </h5>           
 
     </section>
 </template>
@@ -48,7 +53,7 @@ export default {
             users:null,
             cargando: true,
             huboerror: false,
-            urlApi: `${settings.environments.dev.api.uri}/users`
+            urlApi: `${settings.environments.prod.api.uri}/users`
         }
     },
     mounted(){
@@ -73,12 +78,33 @@ export default {
 </script>
 
 <style scoped>
+.mi-table {
+	border: 2px solid #FAFAFA;
+    text-align: left;
+}
+.table-striped {
+	border: 2px solid #FAFAFA;
+}
+.mi-table thead tr {
+	color: #17A2B8;
+	border: 2px solid #FAFAFA;
+}
+.mi-table>tbody>tr:nth-child(odd)>td,
+.mi-table>tbody>tr:nth-child(odd)>th {
+    background-color: #F9F9F9;
+}
+.total {
+	border-top: 2px solid #F5F5F5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+}
 .spinner {
     position: absolute;
     left: 50%;
     top: 50%;
-    height:160px;
-    width:160px;
+    height:100px;
+    width:100px;
     margin:0px auto;
     -webkit-animation: rotation .6s infinite linear;
     -moz-animation: rotation .6s infinite linear;
