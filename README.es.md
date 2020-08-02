@@ -1,4 +1,6 @@
-# Consumir api rest con Vue.js
+#⚡ Consumir api rest con Vue.js
+
+![GitHub repo](https://raw.githubusercontent.com/code4kb/consumir-api-rest-vuejs/master/src/assets/header-vue.png "Repo")
 
 Ejemplo sobre como consumir y mostrar datos desde un API REST a través de Vue.js, utilizando Axios.js. 
 
@@ -57,7 +59,7 @@ npm run serve
 
 
 
-![GitHub repo](https://raw.githubusercontent.com/code4kb/consumir-api-rest-vuejs/master/src/assets/repo_github_vue.gif "Repo")
+![GitHub repo](https://raw.githubusercontent.com/code4kb/consumir-api-rest-vuejs/master/src/assets/list-users.png "Repo")
 
 
 ## Cómo colaborar en este repositorio de GitHub 🖇️

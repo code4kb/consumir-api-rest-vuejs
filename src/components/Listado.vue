@@ -121,7 +121,7 @@ export default {
     from {-webkit-transform: rotate(0deg);}
     to {-webkit-transform: rotate(359deg);}
 }
-@-moz-keyframes rotation {
+@keyframes rotation {
     from {-moz-transform: rotate(0deg);}
     to {-moz-transform: rotate(359deg);}
 }
