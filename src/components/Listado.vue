@@ -37,43 +37,14 @@
                 </tr>
             </tbody>
         </table>
-        <h5 class="text-left total">Total contacts found: {{users.length}} </h5>           
-
+        <h5 class="text-left total">Total contacts found: {{users.length}} </h5>
     </section>
 </template>
 
 <script>
-import axios from 'axios'
-import settings from '../settings.json'
-
 export default {
     name: 'listado',
-    data() {
-        return {
-            users:null,
-            cargando: true,
-            huboerror: false,
-            urlApi: `${settings.environments.prod.api.uri}/users`
-        }
-    },
-    mounted(){
-        this.getAll();
-    },
-    methods: {
-        getAll(){
-            this.cargando = true //the loading begin
-            axios
-                .get(this.urlApi)   
-                .then(response => {
-                    this.users = response.data
-                })
-                .catch(error => {
-                    console.log(error)
-                    this.huboerror = true
-                })
-                .finally(() => this.cargando = false)
-                }
-    }
+    props: ['users', 'huboerror', 'cargando']
 }
 </script>
 
