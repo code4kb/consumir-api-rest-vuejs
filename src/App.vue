@@ -1,64 +1,45 @@
 <template>
   <div id="app">
-    <div class="container small">
-      <div class="row">
-        <div class="col-12">
-          <div class="box">
-            <h5><img src="https://vuejs.org/images/logo.png" alt="vue logo" class="imagen" >Consumir API REST</h5>
-            <p>Ejemplo sobre como consumir y mostrar datos desde un API REST a través de Vue.js, utilizando Axios.js.</p>			
-          </div><br>
-          <div class="card">
-            <div class="card-body">
-              <Listado />
-            </div>
-          </div>
-        </div>
-      </div>  
-    </div>
+    <!-- Shared Navbar -->
+    <header>
+        <Navbar/>
+    </header>
+    <!-- Entry point page -->
+    <main role="main">
+        <!-- TODO: Implement router system for pages here -->
+        <HomePage/>
+    </main>
+    <!-- TODO: Implement footer-->
   </div>
 </template>
 
 <script>
-import Listado from './components/Listado.vue';
+import HomePage from './pages/HomePage.vue';
+import Navbar from './components/Navbar';
 
 export default {
   name: 'App',
   components: {
-    Listado
+    HomePage,
+    Navbar
   }
 }
 </script>
 
-<style scoped>
+<style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 body {
-  padding: 15px;
+  padding: 0px;
 }
-.box {
-	background-color: #f8f8f8;
-	border-left: 4px solid #41B883;
-	padding: 12px;
-	margin-bottom: 15px;
-}
-.space {
-	padding: 30px;
-}
-.imagen {
-    vertical-align: middle;
-    margin-right: 5px;
-	max-width:32px;
-	max-height:32px;
-	width:auto;
-	height:auto;	
-}
-.small {
-  max-width: 720px;
+.links{
+	padding:0px;
+	margin:0px;
 }
 </style>
