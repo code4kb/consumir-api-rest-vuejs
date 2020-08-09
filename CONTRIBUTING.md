@@ -1,11 +1,11 @@
 # Cómo colaborar en este repositorio de GitHub
 
-*   Fork del repositorio
-*   Clonar el repositorio
-*   Actualizar la rama master
-*   Crear una rama
-*   Hacer los cambios
-*   Hacer un Pull Request
+* Fork del repositorio
+* Clonar el repositorio
+* Actualizar la rama master
+* Crear una rama
+* Hacer los cambios
+* Hacer un Pull Request
 
 ## Fork del repositorio
 
@@ -62,4 +62,3 @@ Si todo está bien, enviar con el botón "Send Pull Request".
 Esperar a que el dueño del repositorio lo revise (code4Kb), acepte y mezcle en la rama correspondiente.
 
 Muchas gracias ✔️
-
