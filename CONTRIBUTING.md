@@ -15,7 +15,7 @@ El primer paso es hacer "Fork" del repositorio.
 
 Después de tener el repositorio en tu cuenta, seleccionar la dirección del repositorio "SSH o HTTP" y clonar:
 
-`$ git clone https://github.com/TuUsuario/NombreRepo.git`
+`$ git clone https://github.com/TuUsuario/consumir-api-rest-vuejs.git`
 
 Dentro de la carpeta que genera, comprobar la URL del repositorio:
 
