@@ -3,6 +3,7 @@ import BootstrapVue from "bootstrap-vue"
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import HomePage from './pages/HomePage.vue';
+import UserPage from './pages/UserPage.vue';
 
 import 'jquery'
 import 'popper.js'
@@ -16,10 +17,14 @@ Vue.config.productionTip = false;
 
 // Register page route here
 const routes = [
-  { path: '/', component: HomePage },
+  { path: '', component: HomePage },
+  { path: '/user/:id?', name: 'user', component: UserPage, props: true },
 ];
 
-const router = new VueRouter({ routes });
+const router = new VueRouter({
+  mode: 'history', 
+  routes 
+});
 
 new Vue({
   router: router,

@@ -31,9 +31,10 @@
                     <td>@{{user.username}}</td>
                     <td><a v-bind:href="'mailto:' + user.email">{{user.email}}</a></td>
                     <td>{{user.address.city}}</td>
-                    <td>					
-                        <a href="#" class="btn btn-light text-info" title="View profile">🔍</a>
-                    </td>                    
+                    <td>
+                        <router-link class="btn btn-light text-info" 
+                        title="View profile" :to="{ name: 'user', params: { user }}">🔍</router-link>
+                    </td>
                 </tr>
             </tbody>
         </table>
