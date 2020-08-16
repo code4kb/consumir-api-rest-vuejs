@@ -6,22 +6,20 @@
     </header>
     <!-- Entry point page -->
     <main role="main">
-        <!-- TODO: Implement router system for pages here -->
-        <HomePage/>
+        <router-view></router-view>
     </main>
     <!-- TODO: Implement footer-->
   </div>
+
 </template>
 
 <script>
-import HomePage from './pages/HomePage.vue';
 import Navbar from './components/Navbar';
 
 export default {
   name: 'App',
   components: {
-    HomePage,
-    Navbar
+    Navbar,
   }
 }
 </script>
